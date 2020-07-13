@@ -31,5 +31,5 @@ jobs:
         docker buildx build \
           --platform linux/amd64,linux/arm/v7 \
           --output "type=image,push=false" \
-          --file frr/docker/debian/Dockerfile frr/docker/debian
+          --file frr/docker/alpine/Dockerfile frr
   
