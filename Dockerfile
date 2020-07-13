@@ -5,6 +5,6 @@ RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/reposit
 		--no-cache \
 		--update-cache \
 		tini \
-		frr
+		frr=7.4-r0
 COPY docker-start /usr/lib/frr/docker-start
 ENTRYPOINT [ "/sbin/tini", "--", "/usr/lib/frr/docker-start" ]
