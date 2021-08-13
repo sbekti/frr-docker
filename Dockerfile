@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.12
 ENV FRR_VERSION=7.3.1-r0
 RUN echo 'http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories \
 	&& apk add \
